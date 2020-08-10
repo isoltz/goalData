@@ -5,6 +5,7 @@ import csv
 
 
 # scraping the goal data from https://www.icydata.hockey/
+# hardcoded pageCount to range of 1-32 based on the URLs on the website
 for pageCount in range(1,32):
 	filename = f'dataset{pageCount}.csv'
 	url = f'http://www.icydata.hockey/player_stats/{pageCount}/goals'
